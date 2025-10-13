@@ -1,0 +1,31 @@
+/* Fix utama */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Membuat main konten mengisi ruang tersisa */
+main {
+  flex: 1;
+}
+
+/* Gaya teks untuk judul */
+.tentang-saya-h {
+  font-style: italic;
+  font-size: 30px;
+  color: aliceblue;
+  padding-left: 4%;
+  padding-top: 4%;
+}
+
+/* Gaya teks untuk paragraf */
+.tentang-saya-p {
+  font-size: 20px;
+  color: aliceblue;
+  text-align: justify;
+  padding-left: 4%;
+  padding-right: 4%;
+}

@@ -1,0 +1,36 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Mengisi tinggi viewport */
+  overflow: hidden;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Responsif dan menutupi area */
+  z-index: -1;
+}
+
+/* Konten di atas video */
+.banner .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.jelajahi {
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5); /* Tambahan agar teks terbaca */
+  padding: 1rem;
+  border-radius: 10px;
+}
