@@ -1,0 +1,28 @@
+.body {
+  background-color: #1e1e1e;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+.Deskripsi-Karya {
+    color: aliceblue;
+    padding-left: 5%;
+}
+
+.tombol {
+    color: white;
+    background-color: red;
+}
+#layout {
+  gap: 30px;
+  padding-left: 50px;
+}
+p{
+  text-align: justify;
+}
+
+
