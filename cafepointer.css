@@ -1,0 +1,18 @@
+.nama-project {
+    padding-left: 30px;
+    padding-top:10px;
+    color: #fff;
+}
+.nama-project span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 0%;
+}
+.gambar1{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.gambar1 img{
+    width: 700px;
+}
