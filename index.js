@@ -16,3 +16,7 @@ audioVideo.addEventListener('ended', () => {
     }, delay);
 });
 
+document.addEventListener("click", () => {
+    video.muted = false ;
+    video.play();
+});
