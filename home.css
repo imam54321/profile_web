@@ -16,7 +16,6 @@
   padding-top: 20px;
   padding-left: 80px;
   padding-right: 80px;
-  position: fixed;
   width: 100%;
   z-index: 100;
   transition: 0.3s;
@@ -83,6 +82,20 @@
 .next {
   right: 20px;
 }
+.company {
+  padding-top: 30px;
+  text-align: justify;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.company p {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 24px;
+}
+.company a {
+  color: #6b6868;
+  text-decoration: none;
+}
 .porto-terbaru {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolom */
@@ -93,15 +106,33 @@
 }
 
 .porto {
-    text-align: center;        /* teks di tengah */
-    max-width: 350px;          /* biar grid tidak melebar */
-    margin: 0 auto;            /* pusatkan item */
+  text-align: center;        /* teks di tengah */
+  max-width: 500px;          /* biar grid tidak melebar */
+  margin: 0 auto;            /* pusatkan item */
+  padding-top: 30px;
 }
-
+.porto a {
+  text-decoration: none;
+  color: inherit;
+}
+.porto p {
+  padding-top: 50px;
+}
 .porto img {
     width: 100%;
     border-radius: 0px;
     display: block;
+}
+
+.more {
+  text-align: center;
+}
+.more a {
+  color: #fff;
+}
+.more h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
 }
 @media (max-width: 768px) {
   .navbar {

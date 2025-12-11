@@ -48,7 +48,7 @@
     display: block;
     font-size: 16px;
     font-style: italic;
-    color: #ffffff;
+    color: inherit;
     margin-bottom: 20px;
 }
 
@@ -72,11 +72,25 @@
 .gambar1 img{
     width: 700px;
 }
+.deskar {
+    padding-top: 30px;
+    padding-left: 325px;
+    padding-right: 325px;
+    text-align: justify;
+}
+.judul {
+    padding-top: 20px;
+    padding-left: 325px;
+}
+.deskar p {
+    font-size: 20px;
+}
 .gambar2{
     display: flex;
     padding-top: 30px;
     align-items: center;
     justify-content: center;
+    padding-right: 33px;
 }
 .gambar2 img{
     width: 700px;
