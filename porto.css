@@ -1,15 +1,44 @@
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 28px;
-  padding: 20px 40px;
+.gallery-container {
+  max-width: 1200px;  
+  margin: 0 auto;   
+  padding: 0 20px;    
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 28px;
+  padding: 30px 20px;
+}
+
+.navbar {
+  background: transparent !important;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  z-index: 100;
+  transition: 0.3s;
+}
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 25px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
 .card {
   background: none;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   overflow: hidden;
   cursor: pointer;
+}
+
+.card a{
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -18,7 +47,7 @@
   aspect-ratio: 4/3;
   object-fit: cover;         
   object-position: center 35%; 
-  border-radius: 12px;
+  /* border-radius: 12px; */
   display: block;
 }
 

@@ -1,80 +1,151 @@
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Mengisi tinggi viewport */
-  overflow: hidden;
-}
 
-.banner video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Responsif dan menutupi area */
-  z-index: -1;
-}
-
-/* Konten di atas video */
-.banner .container {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  padding: 2rem;
-}
-
-.jelajahi {
-  font-size: 1.2rem;
-  background: rgba(0, 0, 0, 0.5); 
-  padding: 1rem;
-  border-radius: 10px;
-}
 .follow {
   padding-right: 20px;
 }
-
-@media (max-width: 768px) {
-
-    .video-banner {
-        height: 45vh;      
-    }
-
-    .video-banner video {
-        width: 100%;         
-        height: 100%;
-        object-fit: contain; 
-        background: #000;    
-    }
-
-    .banner-content {
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-    }
-
-    .banner-content h1 {
-        font-size: 1.4rem;
-    }
-
-    .banner-content p {
-        font-size: 0.85rem;
-    }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
 }
-@media (max-width: 480px) {
-    .video-banner {
-        height: 40vh;
-    }
 
-    .banner-content h1 {
-        font-size: 1.2rem;
-    }
-
-    .banner-content p {
-        font-size: 0.75rem;
-    }
+/* NAVBAR */
+.navbar {
+  background: transparent !important;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: 0.3s;
 }
+
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 25px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.6;
+}
+.carousel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 2.5s ease; /* SLOW SLIDE */
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tombol */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 18px;
+  border: none;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+.porto-terbaru {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    gap: 20px;                 /* jarak antar item */
+    background-color: black;   /* background hitam */
+    padding: 20px;             /* biar background terlihat */
+    justify-content: center;   /* item tetap di tengah */
+}
+
+.porto {
+    text-align: center;        /* teks di tengah */
+    max-width: 350px;          /* biar grid tidak melebar */
+    margin: 0 auto;            /* pusatkan item */
+}
+
+.porto img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* ANIMASI SLIDER */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* PORTOFOLIO GRID */
+.porto-terbaru {
+  padding: 60px;
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.porto {
+  width: 100%;
+  height: 230px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.porto:hover {
+  transform: scale(1.03);
+}
+
+.porto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

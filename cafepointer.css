@@ -1,7 +1,16 @@
 .nama-project {
-    padding-left: 30px;
+    
+    padding-left : 30px;
     padding-top:10px;
     color: #fff;
+   
+}
+.designby {
+    
+    padding-right : 30px;
+    padding-top:10px;
+    color: #fff;
+    text-align: end;
 }
 .nama-project span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,4 +24,47 @@
 }
 .gambar1 img{
     width: 700px;
+}
+.gambar2{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.gambar2 img{
+    width: 700px;
+    border: 0.5px solid #ffffff59;
+}
+.gambar3{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.gambar3 img{
+    width: 700px;
+    border: 0.5px solid #ffffff59;
+}
+.gambar4{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.gambar4 img{
+    width: 700px;
+    border: 0.5px solid #ffffff59;
+}
+.gambar5{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.gambar5 img{
+    width: 700px;
+    border: 0.5px solid #ffffff59;
+}
+.follow {
+  padding-right: 20px;
 }
