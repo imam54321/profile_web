@@ -1,3 +1,24 @@
+.navbar {
+  background: transparent !important;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 25px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.6;
+}
 .nama-project {
     
     padding-left : 30px;
@@ -5,20 +26,46 @@
     color: #fff;
    
 }
+
 .designby {
-    
-    padding-right : 30px;
-    padding-top:10px;
-    color: #fff;
-    text-align: end;
+    padding: 30px 25px;
+    padding-bottom: 0;
+    max-width: 400px;
+    margin: 40px 40px 40px auto; /* atas 40px, kanan 0, bawah 40px, kiri 40px */
+    /* hilangkan margin auto agar tidak tengah */
+    font-family: "Helvetica", sans-serif;
+    align-items: end;
+    justify-content: end;
 }
+
+.designby h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.designby span {
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.designby .deskripsi p {
+    line-height: 1.6;         /* jarak antar baris */
+    font-size: 15px;
+    color: #fff;
+    text-align: justify;
+}
+
 .nama-project span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 0%;
 }
 .gambar1{
     display: flex;
-    padding-top: 30px;
+    padding-top: 10px;
     align-items: center;
     justify-content: center;
 }
