@@ -1,8 +1,4 @@
-
-.follow {
-  padding-right: 20px;
-}
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +6,15 @@
   font-family: "Helvetica", sans-serif;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
-  background: transparent !important;
-  padding-top: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  position: absolute;        /* 🔥 overlay di atas carousel */
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 100;
-  transition: 0.3s;
+  padding: 20px 80px;
+  background: transparent !important;
+  z-index: 999;
 }
 
 .navbar .nav-link {
@@ -32,6 +28,12 @@
 .navbar .nav-link:hover {
   opacity: 0.6;
 }
+
+.follow {
+  padding-right: 20px;
+}
+
+/* ================= CAROUSEL ================= */
 .carousel {
   width: 100%;
   height: 100vh;
@@ -39,10 +41,21 @@
   overflow: hidden;
 }
 
+/* overlay gelap */
+.carousel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
 .carousel-track {
   display: flex;
   height: 100%;
-  transition: transform 2.5s ease; /* SLOW SLIDE */
+  transition: transform 2.5s ease;
+  position: relative;
+  z-index: 0;
 }
 
 .slide {
@@ -56,189 +69,143 @@
   object-fit: cover;
 }
 
-/* Tombol */
-.prev, .next {
+/* tombol */
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 12px 18px;
   border: none;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 25px;
   cursor: pointer;
   border-radius: 4px;
   transition: 0.3s;
+  z-index: 2;
 }
 
-.prev:hover, .next:hover {
-  background: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
-.prev {
-  left: 20px;
-}
+.prev { left: 20px; }
+.next { right: 20px; }
 
-.next {
-  right: 20px;
-}
+/* ================= COMPANY ================= */
 .company {
-  padding-top: 30px;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: auto;
   text-align: justify;
-  padding-left: 70px;
-  padding-right: 70px;
 }
+
 .company p {
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.6;
 }
+
 .company a {
   color: #6b6868;
   text-decoration: none;
 }
+
+/* ================= PORTFOLIO ================= */
 .porto-terbaru {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
-    gap: 20px;                 /* jarak antar item */
-    background-color: black;   /* background hitam */
-    padding: 20px;             /* biar background terlihat */
-    justify-content: center;   /* item tetap di tengah */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  background-color: black;
+  padding: 80px;
 }
 
 .porto {
-  text-align: center;        /* teks di tengah */
-  max-width: 500px;          /* biar grid tidak melebar */
-  margin: 0 auto;            /* pusatkan item */
-  padding-top: 30px;
+  width: 100%;
 }
+
 .porto a {
   text-decoration: none;
   color: inherit;
 }
-.porto p {
-  padding-top: 50px;
-}
+
 .porto img {
-    width: 100%;
-    border-radius: 0px;
-    display: block;
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 
+.porto p {
+  padding-top: 20px;
+  color: white;
+}
+
+/* ================= MORE ================= */
 .more {
   text-align: center;
+  padding: 50px 0;
 }
+
 .more a {
   color: #fff;
+  text-decoration: none;
 }
+
 .more h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 24px;
 }
-@media (max-width: 768px) {
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
   .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 40px;
   }
 
-  .navbar .nav-link {
-    font-size: 13px;
-    margin-left: 15px;
+  .porto-terbaru {
+    padding: 50px;
+  }
+
+  .porto img {
+    height: 350px;
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
   .navbar .nav-link {
     font-size: 12px;
     margin-left: 10px;
   }
-}
-@media (max-width: 768px) {
+
   .carousel {
-    height: 60vh; /* lebih pendek di tablet/HP */
+    height: 55vh;
   }
 
-  .slide img {
-    object-fit: cover;
-    height: 100%;
-  }
-
-  .prev, .next {
-    padding: 8px 12px;
-    font-size: 20px;
-  }
-
-  .prev { left: 10px; }
-  .next { right: 10px; }
-}
-
-@media (max-width: 480px) {
-  .carousel {
-    height: 50vh; /* lebih ringkas di HP kecil */
-  }
-
-  .prev, .next {
+  .prev,
+  .next {
     padding: 6px 10px;
     font-size: 18px;
   }
-}
-/* Tablet: 2 kolom */
-@media (max-width: 992px) {
+
   .porto-terbaru {
-    grid-template-columns: repeat(2, 1fr);
     padding: 20px;
   }
-}
 
-/* HP: 1 kolom */
-@media (max-width: 576px) {
-  .porto-terbaru {
-    grid-template-columns: 1fr;
-    padding: 10px;
+  .porto img {
+    height: 260px;
   }
 
-  .porto {
-    max-width: 80%;
-    margin: 0 auto;
-    padding-top: 20px;
+  .company {
+    padding: 60px 20px;
   }
 }
-
-
-
-/* ANIMASI SLIDER */
-@keyframes slide {
-  0%   { transform: translateX(0); }
-  33%  { transform: translateX(-100%); }
-  66%  { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
-
-/* PORTOFOLIO GRID */
-/* .porto-terbaru {
-  padding: 60px;
-  background: #f7f7f7;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.porto {
-  width: 100%;
-  height: 230px;
-  background: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.porto:hover {
-  transform: scale(1.03);
-}
-
-.porto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-

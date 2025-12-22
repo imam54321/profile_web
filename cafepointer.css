@@ -51,6 +51,10 @@
     color: inherit;
     margin-bottom: 20px;
 }
+.designby span a{
+    color: inherit;
+    text-decoration: none;
+}
 
 .designby .deskripsi p {
     line-height: 1.6;         /* jarak antar baris */
@@ -70,7 +74,7 @@
     justify-content: center;
 }
 .gambar1 img{
-    width: 700px;
+    width:900px;
 }
 .deskar {
     padding-top: 30px;
@@ -93,7 +97,7 @@
     padding-right: 33px;
 }
 .gambar2 img{
-    width: 700px;
+    width:900px;
     border: 0.5px solid #ffffff59;
 }
 .gambar3{
@@ -103,7 +107,7 @@
     justify-content: center;
 }
 .gambar3 img{
-    width: 700px;
+    width:900px;
     border: 0.5px solid #ffffff59;
 }
 .gambar4{
@@ -113,7 +117,7 @@
     justify-content: center;
 }
 .gambar4 img{
-    width: 700px;
+    width:900px;
     border: 0.5px solid #ffffff59;
 }
 .gambar5{
@@ -123,7 +127,7 @@
     justify-content: center;
 }
 .gambar5 img{
-    width: 700px;
+    width:900px;
     border: 0.5px solid #ffffff59;
 }
 .follow {
