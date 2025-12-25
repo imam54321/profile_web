@@ -78,16 +78,20 @@
 }
 .deskar {
     padding-top: 30px;
-    padding-left: 325px;
+    padding-left: 250px;
     padding-right: 325px;
     text-align: justify;
 }
 .judul {
     padding-top: 20px;
-    padding-left: 325px;
+    padding-left: 250px;
+}
+.judul h1 {
+    font-family: 'Times New Roman', Times, serif;
 }
 .deskar p {
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .gambar2{
     display: flex;

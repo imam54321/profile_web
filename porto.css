@@ -1,47 +1,62 @@
+/* =====================
+   GALLERY CONTAINER
+===================== */
 .gallery-container {
-  max-width: 1200px;  
-  margin: 0 auto;   
-  padding: 0 20px;    
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
-  gap: 28px;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
+/* =====================
+   GALLERY GRID
+===================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+/* =====================
+   NAVBAR
+===================== */
 .navbar {
   background: transparent !important;
-  padding-top: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 20px 80px;
   width: 100%;
   z-index: 100;
   transition: 0.3s;
 }
+
 .navbar .nav-link {
-  color: white !important;
-  margin-left: 25px;
+  color: #fff !important;
+  margin-left: 24px;
   font-size: 15px;
   letter-spacing: 0.5px;
-  transition: 0.2s;
+  transition: opacity 0.2s ease;
 }
+
+.navbar .nav-link:hover {
+  opacity: 0.7;
+}
+
+/* =====================
+   CARD
+===================== */
 .card {
-  background: none;
-  /* border-radius: 12px; */
+  background: transparent;
   overflow: hidden;
   cursor: pointer;
 }
 
-.card a{
+.card a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
-
+/* =====================
+   IMAGE
+===================== */
 .card img {
   width: 100%;
   aspect-ratio: 4/3;
@@ -52,16 +67,46 @@
 }
 
 
+/* =====================
+   TEXT
+===================== */
 .card h3 {
   color: #fff;
   font-size: 16px;
-  margin: 10px 0 4px;
+  margin: 14px 0 4px;
   font-weight: 600;
 }
 
-
 .card p {
-  color: #ccc;
+  color: #bbb;
   font-size: 13px;
-  margin: 0 0 5px;
+  margin: 0;
+}
+
+/* =====================
+   HOVER EFFECT (HALUS)
+===================== */
+.card:hover img {
+  transform: scale(1.02);
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 24px;
+  }
+
+  .gallery-container {
+    padding: 30px 16px;
+  }
+
+  .gallery {
+    gap: 24px;
+  }
 }
