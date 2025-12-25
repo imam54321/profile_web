@@ -1,4 +1,24 @@
-/* Fix utama */
+.navbar {
+  position: absolute;        /* 🔥 overlay di atas carousel */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 80px;
+  background: transparent !important;
+  z-index: 999;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 25px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.navbar .nav-link:hover {
+  opacity: 0.6;
+}/* Fix utama */
 html, body {
   height: 100%;
   margin: 0;
@@ -13,6 +33,113 @@ main {
   width: 100%;
   flex-wrap: wrap;
 }
+.about-company {
+  background-color: #000; /* bisa diganti sesuai konsep */
+  padding: 80px 40px;
+}
+
+.about-company-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about-company-container video {
+  width: 600px;       /* ukuran video */
+  max-width: 100%;    /* responsive */
+  /* border-radius: 12px; */
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.about-company-text {
+  flex: 1;
+  color: #fff;
+}
+
+.tentang-saya-h {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.nama-owner {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.tentang-saya-p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .about-company-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-company-container video {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .about-company-text h1,
+  .about-company-text h2,
+  .about-company-text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-company {
+    padding: 40px 20px;
+  }
+
+  .about-company-container video {
+    width: 100%;
+  }
+
+  .about-company-text {
+    padding: 0 10px;
+  }
+}
+
+
+.tentang-saya-h {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.nama-owner {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.tentang-saya-p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-company-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-company-img {
+    width: 240px;
+  }
+}
+
 
 .about {
   display: grid;

@@ -116,11 +116,16 @@
 /* ================= PORTFOLIO ================= */
 .porto-terbaru {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 🔥 hanya 2 per baris */
   gap: 30px;
   background-color: black;
-  padding: 80px;
+  padding-left: 120px;
+  margin: 0 auto ;
+  justify-content: center ;
+  align-items: center;
+  /* max-width: 900px; */
 }
+
 
 .porto {
   width: 100%;
@@ -132,6 +137,12 @@
 }
 
 .porto img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+.porto video {
   width: 80%;
   height: 250px;
   object-fit: cover;
@@ -162,20 +173,6 @@
 /* ================= RESPONSIVE ================= */
 
 /* Tablet */
-@media (max-width: 992px) {
-  .navbar {
-    padding: 20px 40px;
-  }
-
-  .porto-terbaru {
-    padding: 50px;
-  }
-
-  .porto img {
-    height: 350px;
-  }
-}
-
 /* Mobile */
 @media (max-width: 576px) {
   .navbar {
@@ -197,15 +194,43 @@
     font-size: 18px;
   }
 
+  /* ================= PORTFOLIO MOBILE ================= */
   .porto-terbaru {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* 🔥 1 kolom */
+    gap: 25px;
+    text-align: center;
+  }
+
+  .porto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔥 konten tengah */
   }
 
   .porto img {
-    height: 260px;
+    width: 100%;        /* 🔥 full lebar container */
+    max-width: 320px;   /* 🔥 biar nggak kegedean */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+   .porto video {
+    width: 100%;        /* 🔥 full lebar container */
+    max-width: 320px;   /* 🔥 biar nggak kegedean */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .porto p {
+    padding-top: 14px;
+    font-size: 14px;
   }
 
   .company {
     padding: 60px 20px;
   }
 }
+
