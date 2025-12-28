@@ -1,5 +1,15 @@
+/* ================= GLOBAL ================= */
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* ================= NAVBAR ================= */
 .navbar {
-  position: absolute;        /* 🔥 overlay di atas carousel */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +19,7 @@
 }
 
 .navbar .nav-link {
-  color: white !important;
+  color: #fff !important;
   margin-left: 25px;
   font-size: 15px;
   letter-spacing: 0.5px;
@@ -18,23 +28,10 @@
 
 .navbar .nav-link:hover {
   opacity: 0.6;
-}/* Fix utama */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-/* Membuat main konten mengisi ruang tersisa */
-main {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
+/* ================= ABOUT COMPANY ================= */
 .about-company {
-  background-color: #000; /* bisa diganti sesuai konsep */
   padding: 80px 40px;
 }
 
@@ -42,189 +39,123 @@ main {
   display: flex;
   align-items: center;
   gap: 50px;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .about-company-container video {
-  width: 600px;       /* ukuran video */
-  max-width: 100%;    /* responsive */
-  /* border-radius: 12px; */
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 .about-company-text {
   flex: 1;
-  color: #fff;
 }
 
-.tentang-saya-h {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  color: #fff;
+/* ================= LAYANAN ================= */
+.judul-layanan {
+  text-align: center;
+  font-size: 60px;
+  margin: 80px 0 40px;
 }
 
-.nama-owner {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #fff;
+.layanan {
+  display: grid;
+  margin-top: 50px;
+  padding-left: 70px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  /* padding: 60px 80px; */
+  align-items: center;
+  margin-bottom: 70px;
 }
 
-.tentang-saya-p {
+.layanan h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.layanan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.layanan li {
   font-size: 16px;
-  line-height: 1.7;
-  color: #ddd;
+  line-height: 1.8;
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .about-company-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-company-container video {
-    width: 300px;
-    margin-bottom: 30px;
-  }
-
-  .about-company-text h1,
-  .about-company-text h2,
-  .about-company-text p {
-    text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-company {
-    padding: 40px 20px;
-  }
-
-  .about-company-container video {
-    width: 100%;
-  }
-
-  .about-company-text {
-    padding: 0 10px;
-  }
-}
-
-
-.tentang-saya-h {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.nama-owner {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.tentang-saya-p {
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .about-company-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-company-img {
-    width: 240px;
-  }
-}
-
-
+/* ================= ABOUT SECTION ================= */
 .about {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  align-items: center;
+  grid-template-columns: 1fr 400px;
   gap: 40px;
   padding: 50px;
 }
 
+.about img {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .about-text {
-  color: white;
   line-height: 1.8;
 }
 
-.about img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.nama-owner {
-  font-style: italic;
+/* ================= TEXT STYLE ================= */
+.nama-owner{
+  /* font-style: italic; */
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: bold;
   color: aliceblue;
-  padding-left: 4%;
-  padding-top: 4%;
 }
-
-/* Gaya teks untuk judul */
 .tentang-saya-h {
-  font-style: italic;
-  font-size: 30px;
-  color: aliceblue;
-  padding-left: 4%;
-  padding-top: 4%;
+  /* font-style: italic; */
+  font-size: 26px;
 }
 
-/* Gaya teks untuk paragraf */
 .tentang-saya-p {
-  font-size: 20px;
+  font-size: 18px;
   color: aliceblue;
   text-align: justify;
-  padding-left: 4%;
-  padding-right: 4%;
 }
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .about-company {
+    padding: 40px 20px;
+  }
+
+  .about-company-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .judul-layanan {
+    font-size: 38px;
+  }
+
+  .layanan {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
   .about {
-    
-    grid-template-columns: 1fr; 
-    padding: 20px;
-    text-align: center; 
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    text-align: center;
   }
 
-  .about-text {
-      text-align: left; 
+  .tentang-saya-p {
+    text-align: left;
+    font-size: 16px;
   }
-
-}
-.about-text {
-  color: white;
-  line-height: 1.8;
-}
-
-.about img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.nama-owner, .tentang-saya-h {
-  font-style: italic;
-  font-size: 30px;
-  font-weight: bolder;
-  color: aliceblue;
-  padding-left: 4%;
-  padding-top: 4%;
-}
-
-.tentang-saya-p {
-  font-size: 20px;
-  color: aliceblue;
-  text-align: justify;
-  padding-left: 4%;
-  padding-right: 4%;
 }
