@@ -9,17 +9,17 @@ html, body {
 
 /* ================= NAVBAR ================= */
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 80px;
   background: transparent !important;
-  z-index: 999;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  z-index: 100;
+  transition: 0.3s;
 }
 
 .navbar .nav-link {
-  color: #fff !important;
+  color: white !important;
   margin-left: 25px;
   font-size: 15px;
   letter-spacing: 0.5px;
@@ -29,7 +29,6 @@ html, body {
 .navbar .nav-link:hover {
   opacity: 0.6;
 }
-
 /* ================= ABOUT COMPANY ================= */
 .about-company {
   padding: 80px 40px;
