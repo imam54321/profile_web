@@ -8,7 +8,6 @@
 
 /* ================= NAVBAR ================= */
 .navbar {
-  position: absolute;        /* 🔥 overlay di atas carousel */
   top: 0;
   left: 0;
   width: 100%;
