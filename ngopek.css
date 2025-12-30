@@ -166,5 +166,27 @@ body {
     margin-bottom: 30px;
     font-size: 14px;
   }
+  footer .container {
+    flex-direction: column !important;   /* TURUN KE BAWAH */
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 14px;
+  }
+
+  footer .container > div:first-child {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  footer .container > div:last-child {
+    justify-content: center !important;
+  }
+
+  footer a {
+    margin-right: 0 !important;   /* override me-3 */
+  }
+
 
 }

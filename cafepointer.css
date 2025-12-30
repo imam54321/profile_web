@@ -124,10 +124,6 @@
     margin-bottom: 20px;
   }
 
-  .portfolio-image img {
-    border-radius: 6px;
-  }
-
   /* TEXT */
   .portfolio-text {
     max-width: 100%;
@@ -147,7 +143,7 @@
   .portfolio-text p {
     font-size: 15px;
     line-height: 1.7;
-    text-align: left; /* lebih nyaman di HP */
+    text-align: justify; /* lebih nyaman di HP */
   }
 
   /* DEV / DESIGNER */
