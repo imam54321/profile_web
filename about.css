@@ -11,19 +11,18 @@ p {
   color: #ccc;
 }
 .navbar {
-  background: transparent !important;
-  padding-top: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 100;
-  transition: 0.3s;
+  padding: 20px 80px;
+  background: transparent !important;
+  z-index: 999;
 }
 
 .navbar .nav-link {
   color: white !important;
   margin-left: 25px;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   transition: 0.2s;
 }
@@ -31,6 +30,7 @@ p {
 .navbar .nav-link:hover {
   opacity: 0.6;
 }
+
 /* =====================
    ABOUT COMPANY VIDEO
 ===================== */
@@ -189,10 +189,10 @@ footer i:hover {
   }
 
   .navbar .nav-link {
-    margin-left: 0;
+    margin-left: 25px;
     margin-top: 12px;
-    font-size: 16px;
-    text-align: center;
+    font-size: 15px;
+    text-align: start;
   }
 
   /* =====================
@@ -244,7 +244,8 @@ footer i:hover {
 
   .layanan li {
     font-size: 15px;
-    text-align: center;
+    margin-left: 50px;
+    text-align: start;
     list-style-position: inside;
   }
 
@@ -278,17 +279,34 @@ footer i:hover {
     font-size: 16px;
     text-align: justify;
   }
-
-  /* =====================
-     FOOTER
-  ===================== */
-  footer {
-    text-align: center;
-    padding: 24px 16px;
-  }
-
-  footer i {
-    margin: 0 10px;
-  }
 }
+/* =====================
+   FOOTER MOBILE FIX
+===================== */
+@media (max-width: 768px) {
+
+  footer .container {
+    flex-direction: column !important;   /* TURUN KE BAWAH */
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 14px;
+  }
+
+  footer .container > div:first-child {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  footer .container > div:last-child {
+    justify-content: center !important;
+  }
+
+  footer a {
+    margin-right: 0 !important;   /* override me-3 */
+  }
+
+}
+
 

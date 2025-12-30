@@ -195,18 +195,35 @@ footer i:hover {
     font-size: 14px;
     margin-top: 6px;
   }
+}
+}
+/* =====================
+   FOOTER MOBILE FIX
+===================== */
+@media (max-width: 768px) {
 
-  /* =====================
-     FOOTER
-  ===================== */
-  footer {
+  footer .container {
+    flex-direction: column !important;   /* TURUN KE BAWAH */
+    justify-content: center !important;
+    align-items: center !important;
     text-align: center;
-    padding: 24px 16px;
+    gap: 14px;
   }
 
-  footer i {
-    margin: 0 10px;
+  footer .container > div:first-child {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.85;
   }
+
+  footer .container > div:last-child {
+    justify-content: center !important;
+  }
+
+  footer a {
+    margin-right: 0 !important;   /* override me-3 */
+  }
+
 }
-}
+
 
