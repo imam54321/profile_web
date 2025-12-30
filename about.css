@@ -200,8 +200,8 @@ footer i:hover {
   ===================== */
   .about-company-vid {
     height: 45vh;
+    justify-content: center;
   }
-
   /* =====================
      ABOUT COMPANY TEXT
   ===================== */

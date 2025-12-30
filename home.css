@@ -202,42 +202,39 @@ footer i:hover {
   }
 
   /* ================= PORTFOLIO MOBILE ================= */
-  .porto-terbaru {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr; /* 🔥 1 kolom */
-    gap: 25px;
-    text-align: center;
-  }
+  /* =====================
+   FORCE CENTER MOBILE
+===================== */
+@media (max-width: 768px) {
 
-  .porto {
+  .porto-terbaru {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 24px 0 !important;
+
     display: flex;
     flex-direction: column;
-    align-items: center; /* 🔥 konten tengah */
+    align-items: center;
+    justify-content: center;
   }
 
-  .porto img {
-    width: 100%;        /* 🔥 full lebar container */
-    max-width: 320px;   /* 🔥 biar nggak kegedean */
-    height: 220px;
+  .porto-terbaru .porto {
+    width: 90%;
+    max-width: 320px;
+
+    margin: 0 auto;            /* KUNCI */
+    /* border-radius: 16px; */
+    overflow: hidden;
+    background: #000;
+  }
+
+  .porto-terbaru .porto video {
+    width: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
-    border-radius: 6px;
-  }
-   .porto video {
-    width: 100%;        /* 🔥 full lebar container */
-    max-width: 320px;   /* 🔥 biar nggak kegedean */
-    height: 220px;
-    object-fit: cover;
-    border-radius: 6px;
   }
 
-  .porto p {
-    padding-top: 14px;
-    font-size: 14px;
-  }
-
-  .company {
-    padding: 60px 20px;
-  }
+}
 }
 
