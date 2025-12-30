@@ -40,7 +40,7 @@
 /* TEXT */
 .portfolio-text {
   max-width: 800px;
-  margin-right: 100px;
+  /* margin-right: 10px; */
   margin-bottom: 30px;
   /* margin: 0 auto 140px auto; */
 }
@@ -126,7 +126,7 @@
 
   /* TEXT */
   .portfolio-text {
-    max-width: 100%;
+    max-width: 360px;
     margin-bottom: 40px;
   }
 
