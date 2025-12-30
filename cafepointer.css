@@ -18,125 +18,70 @@
 
 .navbar .nav-link:hover {
   opacity: 0.6;
-}
-.nama-project {
-    
-    padding-left : 30px;
-    padding-top:10px;
-    color: #fff;
-   
+}/* WRAPPER */
+.portfolio-detail {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
 }
 
-.designby {
-    padding: 30px 25px;
-    padding-bottom: 0;
-    max-width: 400px;
-    margin: 40px 40px 40px auto; /* atas 40px, kanan 0, bawah 40px, kiri 40px */
-    /* hilangkan margin auto agar tidak tengah */
-    font-family: "Helvetica", sans-serif;
-    align-items: end;
-    justify-content: end;
+/* IMAGE */
+.portfolio-image {
+  margin-bottom: 30px;
 }
 
-.designby h1 {
-    font-size: 28px;
-    margin-bottom: 8px;
-    color: #ffffff;
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
-.designby span {
-    display: block;
-    font-size: 16px;
-    font-style: italic;
-    color: inherit;
-    margin-bottom: 20px;
-}
-.designby span a{
-    color: inherit;
-    text-decoration: none;
+/* TEXT */
+.portfolio-text {
+  max-width: 800px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  /* margin: 0 auto 140px auto; */
 }
 
-.designby .deskripsi p {
-    line-height: 1.6;         /* jarak antar baris */
-    font-size: 15px;
-    color: #fff;
-    text-align: justify;
+.portfolio-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
-.nama-project span{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 0%;
+.subtitle {
+  display: block;
+  font-style: italic;
+  color: #bbb;
+  margin-bottom: 30px;
 }
-.gambar1{
-    display: flex;
-    padding-top: 10px;
-    align-items: center;
-    justify-content: center;
+
+.portfolio-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
 }
-.gambar1 img{
-    width:900px;
+.portfolio-detail .designer{
+  justify-content: end;
+  margin-bottom: 30px;
+  margin-right: 50px;
 }
-.deskar {
-    padding-top: 30px;
-    padding-left: 250px;
-    padding-right: 325px;
-    text-align: justify;
+.designer {
+  display: block;
+  margin-top: 30px;
+  font-style: italic;
+  text-align: end;
 }
-.judul {
-    padding-top: 20px;
-    padding-left: 250px;
+
+.designer a {
+  color: #fff;
+  text-decoration: none;
 }
-.judul h1 {
-    font-family: 'Times New Roman', Times, serif;
-}
-.deskar p {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.gambar2{
-    display: flex;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-    padding-right: 33px;
-}
-.gambar2 img{
-    width:900px;
-    border: 0.5px solid #ffffff59;
-}
-.gambar3{
-    display: flex;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.gambar3 img{
-    width:900px;
-    border: 0.5px solid #ffffff59;
-}
-.gambar4{
-    display: flex;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.gambar4 img{
-    width:900px;
-    border: 0.5px solid #ffffff59;
-}
-.gambar5{
-    display: flex;
-    padding-top: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.gambar5 img{
-    width:900px;
-    border: 0.5px solid #ffffff59;
-}
-.follow {
-  padding-right: 20px;
-}
+
+
+/* RESPONSIVE */
+/* ===== MOBILE VIEW ===== */
 @media (max-width: 576px) {
 
   /* NAVBAR MOBILE SPACING */
@@ -190,7 +135,7 @@
   }
 
   .portfolio-text h1 {
-    font-size: 28px;
+    font-size:32px;
     line-height: 1.3;
   }
 

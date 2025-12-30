@@ -1,3 +1,6 @@
+body {
+  font-family: "Monserrat",  Helvetica,Arial, sans-serif;
+}
 .navbar {
   background: transparent !important;
   padding-top: 20px;
@@ -55,7 +58,7 @@
 }
 
 .portfolio-text h1 {
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -63,11 +66,11 @@
   display: block;
   font-style: italic;
   color: #bbb;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .portfolio-text p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   text-align: justify;
 }

@@ -1,19 +1,24 @@
 /* =====================
-   GALLERY CONTAINER
+   GLOBAL RESET
 ===================== */
-.gallery-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  font-family: "Montserrat", Helvetica , Arial, sans-serif;
 }
 
 /* =====================
-   GALLERY GRID
+   LINK RESET
 ===================== */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* =====================
@@ -21,22 +26,44 @@
 ===================== */
 .navbar {
   background: transparent !important;
-  padding: 20px 80px;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
   width: 100%;
   z-index: 100;
   transition: 0.3s;
 }
 
 .navbar .nav-link {
-  color: #fff !important;
-  margin-left: 24px;
+  color: white !important;
+  margin-left: 25px;
   font-size: 15px;
   letter-spacing: 0.5px;
-  transition: opacity 0.2s ease;
+  transition: 0.2s;
 }
 
 .navbar .nav-link:hover {
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+/* =====================
+   GALLERY CONTAINER
+===================== */
+.gallery-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  /* margin-bottom: 50px; */
+}
+
+/* =====================
+   GALLERY GRID
+===================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
 }
 
 /* =====================
@@ -44,14 +71,9 @@
 ===================== */
 .card {
   background: transparent;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.card a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 /* =====================
@@ -59,54 +81,132 @@
 ===================== */
 .card img {
   width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;         
-  object-position: center 35%; 
-  /* border-radius: 12px; */
-  display: block;
+  aspect-ratio: 8 / 4;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(0.92);
 }
-
 
 /* =====================
    TEXT
 ===================== */
 .card h3 {
-  color: #fff;
-  font-size: 16px;
-  margin: 14px 0 4px;
+  font-size: 15px;
   font-weight: 600;
+  margin-top: 14px;
+  letter-spacing: 0.3px;
 }
 
 .card p {
-  color: #bbb;
   font-size: 13px;
-  margin: 0;
+  color: #9a9a9a;
+  margin-top: 4px;
 }
 
 /* =====================
-   HOVER EFFECT (HALUS)
+   HOVER EFFECT
 ===================== */
 .card:hover img {
-  transform: scale(1.02);
+  transform: scale(1.04);
+  filter: brightness(1);
 }
 
-.card img {
-  transition: transform 0.3s ease;
+/* =====================
+   FOOTER
+===================== */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+}
+
+footer i {
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+footer i:hover {
+  opacity: 1;
 }
 
 /* =====================
    RESPONSIVE
 ===================== */
 @media (max-width: 768px) {
+ @media (max-width: 576px) {
+
+  /* NAVBAR MOBILE SPACING */
   .navbar {
-    padding: 15px 24px;
+    margin-top: 20px;
+    padding: 20px 18px;
   }
 
+  /* LOGO / BRAND */
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* kalau logo text */
+  }
+
+  .navbar-brand img {
+    max-height: 32px; /* aman di mobile */
+  }
+
+  /* BURGER ICON */
+  .navbar-toggler {
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .navbar-toggler-icon {
+    width: 22px;
+    height: 22px;
+  }
+  /* =====================
+     GALLERY CONTAINER
+  ===================== */
   .gallery-container {
-    padding: 30px 16px;
+    padding: 60px 16px;
   }
 
+  /* =====================
+     GALLERY GRID (VERTICAL)
+  ===================== */
   .gallery {
-    gap: 24px;
+    grid-template-columns: 1fr; /* satu kolom */
+    gap: 32px;
+  }
+
+  /* =====================
+     CARD
+  ===================== */
+  .card img {
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  .card p {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  /* =====================
+     FOOTER
+  ===================== */
+  footer {
+    text-align: center;
+    padding: 24px 16px;
+  }
+
+  footer i {
+    margin: 0 10px;
   }
 }
+}
+

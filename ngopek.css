@@ -18,7 +18,8 @@
 
 .navbar .nav-link:hover {
   opacity: 0.6;
-}/* WRAPPER */
+}
+/* WRAPPER */
 .portfolio-detail {
   max-width: 1100px;
   margin: 0 auto;
@@ -27,7 +28,7 @@
 
 /* IMAGE */
 .portfolio-image {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .portfolio-image img {
