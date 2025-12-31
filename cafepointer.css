@@ -1,3 +1,7 @@
+body {
+  background-color: #000;
+  font-family: "Monserrat", Arial, Helvetica, sans-serif;
+}
 .navbar {
   background: transparent !important;
   padding-top: 20px;
@@ -11,7 +15,7 @@
 .navbar .nav-link {
   color: white !important;
   margin-left: 25px;
-  font-size: 15px;
+  font-size: 20px ;
   letter-spacing: 0.5px;
   transition: 0.2s;
 }

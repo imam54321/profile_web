@@ -4,6 +4,7 @@
 body {
   font-family: 'Montserrat',Helvetica, Arial, sans-serif;
   color: #fff;
+  background-color: #000;
 }
 
 p {
@@ -113,10 +114,11 @@ p {
 
 .layanan li {
   font-size: 14px;
-  color: #bbb;
+  color: #fff;
   margin-bottom: 8px;
   text-align: justify;
   list-style-position: inside;
+  margin-left: 70px;
   
   
 }
@@ -126,6 +128,7 @@ p {
 ===================== */
 .about-owner {
   padding: 80px 20px;
+  background-color: #000;
 }
 
 .about-owner-container {
@@ -165,6 +168,7 @@ p {
 ===================== */
 footer {
   border-top: 1px solid #222;
+  background-color: #000;
 }
 
 footer i {
@@ -207,6 +211,7 @@ footer i:hover {
   ===================== */
   .about-company {
     margin: 32px 16px 0;
+    background-color: #000;
   }
 
   .tentang-company {
@@ -231,6 +236,7 @@ footer i:hover {
     padding: 60px 16px;
     grid-template-columns: 1fr;
     gap: 40px;
+    background-color: #000;
   }
 
   .judul-layanan {

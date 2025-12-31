@@ -1,5 +1,6 @@
 body {
   font-family: "Monserrat", Helvetica, Arial, sans-serif;
+  background-color: #000;
 }
 .navbar {
   background: transparent !important;
@@ -81,6 +82,10 @@ body {
 .designer a {
   color: #fff;
   text-decoration: none;
+}
+footer {
+  background-color: #000;
+  margin-bottom: 20px;
 }
 
 
