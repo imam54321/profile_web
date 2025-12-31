@@ -105,7 +105,7 @@ body {
 }
 
 .company p {
-  font-family:'Times New Roman', Times, serif;
+  /* font-family:'Times New Roman', Times, serif; */
   font-size: 24px;
   line-height: 1.6;
 }
@@ -203,6 +203,9 @@ footer i:hover {
   .next {
     padding: 6px 10px;
     font-size: 18px;
+  }
+  .company p {
+    font-size: 16px;
   }
 
   /* ================= PORTFOLIO MOBILE ================= */

@@ -37,7 +37,7 @@ a {
 .navbar .nav-link {
   color: white !important;
   margin-left: 25px;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   transition: 0.2s;
 }
@@ -183,7 +183,7 @@ footer i:hover {
   ===================== */
   .card img {
     aspect-ratio: 16 / 9;
-    border-radius: 8px;
+    /* border-radius: 8px;   */
   }
 
   .card h3 {

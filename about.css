@@ -74,7 +74,7 @@ p {
 }
 
 .tentang-company-p {
-  font-size: 18px;
+  font-size: 24px;
   text-align: justify;
 }
 
@@ -108,17 +108,18 @@ p {
 .layanan ul {
   /* list-style: none; */
   padding: 0;
-  justify-content: end;
-  align-items: end;
+  justify-content: start;
+  align-items: start;
+  
 }
 
 .layanan li {
-  font-size: 14px;
+  font-size: 24px;
   color: #fff;
   margin-bottom: 8px;
-  text-align: justify;
+  text-align: left;
   list-style-position: inside;
-  margin-left: 70px;
+  margin-left: 40px;
   
   
 }
@@ -159,7 +160,7 @@ p {
 }
 
 .tentang-saya-p {
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
 }
 
